@@ -1,0 +1,13 @@
+name: Android USB Webcam
+source:
+  kind: uvc
+  uri: /dev/video0
+  backend: v4l2
+  width: 1280
+  height: 720
+  fps: 30
+android_control:
+  enabled: false
+output:
+  record_directory: outputs/recordings
+  snapshot_directory: outputs/snapshots
