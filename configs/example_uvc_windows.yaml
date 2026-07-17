@@ -1,0 +1,13 @@
+name: Android USB Webcam Windows
+source:
+  kind: uvc
+  uri: "0"
+  backend: dshow
+  width: 1280
+  height: 720
+  fps: 30
+android_control:
+  enabled: false
+output:
+  record_directory: outputs/recordings
+  snapshot_directory: outputs/snapshots
