@@ -1,0 +1,21 @@
+name: Android Phone RTSP
+source:
+  kind: rtsp
+  uri: rtsp://192.168.1.100:8554/live
+  backend: ffmpeg
+  width: 1280
+  height: 720
+  fps: 30
+  reconnect_delay_s: 1.0
+  buffer_size: 1
+android_control:
+  enabled: true
+  base_url: http://192.168.1.100:8080
+  camera_endpoint: /api/v1/camera
+  method: POST
+  timeout_s: 3.0
+  front_value: front
+  rear_value: rear
+output:
+  record_directory: outputs/recordings
+  snapshot_directory: outputs/snapshots
